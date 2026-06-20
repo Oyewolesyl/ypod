@@ -362,80 +362,118 @@
 
       <section id="finance" class="vision-room" aria-labelledby="finance-title">
         <div class="section-heading">
-          <p class="eyebrow">cost, bom and pricing</p>
-          <h2 id="finance-title">the cheapest smart path is validation before full custom electronics.</h2>
+          <p class="eyebrow">cost room</p>
+          <h2 id="finance-title">what it costs to build ypod at each stage.</h2>
         </div>
 
-        <div class="document-board dense-board">
+        <div class="cost-scenario-grid" aria-label="prototype cost scenarios">
           <article>
-            <p class="model-name">recommended launch-cost strategy</p>
-            <h3>start with ODM samples.</h3>
-            <p>
-              Buy and test existing sleepbud ODM/OEM platforms first. Validate
-              comfort, battery, app behavior, and brand demand before paying for
-              full custom electronics.
-            </p>
+            <p class="model-name">solo founder validation</p>
+            <h3>$1.7k-$12.8k</h3>
+            <p>ODM samples, basic industrial concept, basic CAD, one appearance prototype, Codex/app MVP, packaging draft, compliance pre-check.</p>
           </article>
           <article>
-            <p class="model-name">prototype range</p>
-            <h3>lean vs serious build.</h3>
-            <p>
-              Lean path: sample orders, concept renders, basic CAD, appearance
-              prototype, and Codex/app MVP. Serious path: engineering support,
-              compliance pre-checks, industrial design, DFM, and production planning.
-            </p>
+            <p class="model-name">serious prototype path</p>
+            <h3>$35k-$176k+</h3>
+            <p>multiple supplier samples, full industrial design, CAD/DFM, appearance prototypes, engineering support, app build, packaging, compliance pre-checks.</p>
           </article>
           <article>
-            <p class="model-name">hidden costs</p>
-            <h3>budget beyond the render.</h3>
-            <p>
-              Certification, battery shipping, warranty reserve, returns, replacement
-              tips, support, app maintenance, Bluetooth bugs, firmware updates,
-              and phone OS changes all affect the real business.
-            </p>
+            <p class="model-name">remote prototype alone</p>
+            <h3>$48-$245 each</h3>
+            <p>housing/buttons/ring, small display if used, BLE PCB, battery/charging, assembly and QC for early prototypes.</p>
+          </article>
+          <article>
+            <p class="model-name">remote production target</p>
+            <h3>$14-$44 each</h3>
+            <p>estimated at scale after housing, electronics, battery, charging, assembly, and QC are production-optimized.</p>
           </article>
         </div>
 
-        <div class="finance-grid" aria-label="ypod financial model">
-          <article>
-            <span>core earbuds</span>
-            <strong>$129-$179</strong>
-            <p>launch MSRP target for YPOD Sleepbuds Core.</p>
-          </article>
-          <article>
-            <span>custom edition</span>
-            <strong>$159-$219</strong>
-            <p>wraps, premium packaging, and personalization lift perceived value.</p>
-          </article>
-          <article>
-            <span>remote bundle</span>
-            <strong>$229-$329</strong>
-            <p>system pricing when earbuds and remote sell as a premium sleep kit.</p>
-          </article>
-          <article>
-            <span>future pro</span>
-            <strong>$249-$399</strong>
-            <p>only after ANC, adaptive masking, or sleep insights are real.</p>
-          </article>
+        <div class="cost-table-wrap">
+          <h3>prototype and development budget ranges</h3>
+          <table class="cost-table">
+            <thead>
+              <tr><th>item</th><th>lean route</th><th>serious route</th><th>what it pays for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>ODM sample orders</td><td>$100-$1,000</td><td>$1,000-$3,000</td><td>sleepbud samples from 3-5 suppliers for comfort and battery tests</td></tr>
+              <tr><td>industrial design concept</td><td>$300-$1,500</td><td>$2,000-$8,000</td><td>concept renders, CMF, product form, remote direction</td></tr>
+              <tr><td>3D CAD / DFM model</td><td>$500-$2,500</td><td>$5,000-$15,000</td><td>real prototype and manufacturing discussion files</td></tr>
+              <tr><td>appearance prototype</td><td>$200-$1,500</td><td>$2,000-$10,000</td><td>3D printed, resin, CNC, painted, or silicone mockups</td></tr>
+              <tr><td>working prototype / engineering</td><td>$1,500-$7,500</td><td>$15,000-$80,000+</td><td>ODM platform work or custom electronics support</td></tr>
+              <tr><td>mobile app MVP</td><td>$500-$3,000 self/Codex</td><td>$8,000-$35,000</td><td>pairing, sound library, alarms, device page; real Bluetooth costs more</td></tr>
+              <tr><td>packaging design</td><td>$150-$800</td><td>$1,000-$5,000</td><td>dielines, inserts, manual, regulatory labels</td></tr>
+              <tr><td>compliance pre-check</td><td>$500-$2,000</td><td>$5,000-$20,000</td><td>CE/FCC/Bluetooth/UN38.3 planning before final lab scope</td></tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="pitch-path" aria-label="cost checkpoints">
-          <article>
-            <span>bom target</span>
-            <p>ex-factory can range from lean ODM to premium custom. Avoid a high-cost custom V1 until demand is proven.</p>
-          </article>
-          <article>
-            <span>remote cost</span>
-            <p>prototype remote cost may be high; production target drops when housing, PCB, battery, and assembly scale.</p>
-          </article>
-          <article>
-            <span>margin risk</span>
-            <p>premium bundle margin can work, but high custom costs can destroy the business if MSRP cannot rise.</p>
-          </article>
-          <article>
-            <span>investor use</span>
-            <p>all numbers are planning estimates until supplier quotes, compliance scope, and order quantity are confirmed.</p>
-          </article>
+        <div class="cost-table-wrap">
+          <h3>indicative earbud + case BOM per unit</h3>
+          <table class="cost-table">
+            <thead>
+              <tr><th>subassembly</th><th>low target</th><th>mid target</th><th>premium target</th><th>notes</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>earbud electronics pair</td><td>$8-$14</td><td>$14-$24</td><td>$24-$40</td><td>SoC, RF, drivers, microphones if included, PCB, antenna, sensors</td></tr>
+              <tr><td>earbud batteries</td><td>$1-$3</td><td>$2-$5</td><td>$4-$8</td><td>small Li-ion/Li-poly cells; supplier certification matters</td></tr>
+              <tr><td>earbud plastics/silicone</td><td>$2-$5</td><td>$4-$8</td><td>$8-$15</td><td>comfort parts require tooling quality</td></tr>
+              <tr><td>charging case electronics</td><td>$4-$8</td><td>$8-$15</td><td>$15-$30</td><td>battery management, contacts, LEDs/display, USB-C</td></tr>
+              <tr><td>case battery</td><td>$2-$5</td><td>$4-$8</td><td>$8-$15</td><td>TWS cases often use batteries in the hundreds of mAh range</td></tr>
+              <tr><td>case plastics/hinge/magnets</td><td>$3-$8</td><td>$8-$15</td><td>$15-$30</td><td>surface finish and hinge quality drive perception</td></tr>
+              <tr><td>packaging + manual</td><td>$1.50-$4</td><td>$4-$8</td><td>$8-$15</td><td>premium box and inserts raise landed cost quickly</td></tr>
+              <tr><td>assembly + QC</td><td>$3-$7</td><td>$7-$15</td><td>$15-$30</td><td>audio QC, battery QC, pairing QC</td></tr>
+              <tr><td><strong>total estimated ex-factory</strong></td><td><strong>$24.50-$54</strong></td><td><strong>$51-$98</strong></td><td><strong>$97-$183</strong></td><td>ANC, custom remote, and low MOQ push cost upward</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cost-table-wrap">
+          <h3>ypod remote cost estimate</h3>
+          <table class="cost-table">
+            <thead>
+              <tr><th>component</th><th>lean prototype</th><th>production target</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>housing, buttons, ring</td><td>$10-$60 prototype</td><td>$4-$12 at scale</td></tr>
+              <tr><td>small OLED/status display</td><td>$5-$25</td><td>$2-$8</td></tr>
+              <tr><td>BLE MCU + PCB</td><td>$15-$80</td><td>$3-$10</td></tr>
+              <tr><td>battery + charging</td><td>$8-$30</td><td>$2-$6</td></tr>
+              <tr><td>assembly/QC</td><td>$10-$50</td><td>$3-$8</td></tr>
+              <tr><td><strong>estimated remote cost</strong></td><td><strong>$48-$245 prototype</strong></td><td><strong>$14-$44 production</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="finance-grid" aria-label="pricing model">
+          <article><span>ypod sleepbuds core</span><strong>$129-$179</strong><p>competes below/around Soundcore A20 while staying premium.</p></article>
+          <article><span>ypod sleepbuds custom</span><strong>$159-$219</strong><p>wraps, skin packs, and premium packaging.</p></article>
+          <article><span>sleepbuds + remote bundle</span><strong>$229-$329</strong><p>remote justifies system pricing and differentiation.</p></article>
+          <article><span>ypod pro later</span><strong>$249-$399</strong><p>only after ANC, adaptive masking, or sleep insights are real.</p></article>
+        </div>
+
+        <div class="cost-table-wrap">
+          <h3>gross margin planning</h3>
+          <table class="cost-table">
+            <thead>
+              <tr><th>scenario</th><th>ex-factory</th><th>landed cost estimate</th><th>MSRP</th><th>gross margin before ads/platform fees</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>lean ODM core</td><td>$35</td><td>$48</td><td>$149</td><td>~68%</td></tr>
+              <tr><td>better V1</td><td>$65</td><td>$88</td><td>$199</td><td>~56%</td></tr>
+              <tr><td>premium bundle</td><td>$120</td><td>$160</td><td>$299</td><td>~46%</td></tr>
+              <tr><td>high-cost custom V1</td><td>$160</td><td>$210</td><td>$249</td><td>too thin; avoid unless premium demand is proven</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="cost-warning-grid" aria-label="non-negotiable hidden costs">
+          <article><span>certification</span><p>FCC, CE/RED, RoHS, REACH, Bluetooth qualification and lab tests can cost thousands to tens of thousands depending region and claims.</p></article>
+          <article><span>battery shipping</span><p>lithium battery documentation, UN38.3 test summaries, labels, SOC rules, and forwarder restrictions.</p></article>
+          <article><span>returns</span><p>sleep comfort products can have high return risk if fit is poor. Budget replacement tips and a clear fit guide.</p></article>
+          <article><span>warranty reserve</span><p>reserve 3-8% of revenue until the real failure rate is known.</p></article>
+          <article><span>app maintenance</span><p>firmware updates, phone OS changes, Bluetooth bugs, and support burden continue after launch.</p></article>
+          <article><span>supplier quotes</span><p>all numbers are planning estimates until exact chipset, ANC, tooling, MOQ, certification scope, and factory location are known.</p></article>
         </div>
       </section>
 
