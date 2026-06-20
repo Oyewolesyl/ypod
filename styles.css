@@ -359,6 +359,50 @@ p {
   background: rgba(18, 19, 15, 0.86);
 }
 
+.pitch-room-page {
+  padding-top: 130px;
+}
+
+.pitch-room-page h1 {
+  font-size: 6.4rem;
+}
+
+.pitch-room-media {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: 1px;
+  margin-top: clamp(24px, 4vw, 48px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--line);
+}
+
+.pitch-room-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+  background: #050505;
+}
+
+.roadmap-board {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(24px, 4vw, 48px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--line);
+}
+
+.roadmap-board article {
+  min-height: 240px;
+  padding: clamp(22px, 3vw, 36px);
+  background: #080808;
+}
+
 .section-heading {
   display: grid;
   grid-template-columns: minmax(220px, 0.35fr) minmax(0, 0.65fr);
@@ -894,6 +938,8 @@ footer p {
   .ecosystem-map,
   .document-board,
   .pitch-path,
+  .pitch-room-media,
+  .roadmap-board,
   .motion-grid,
   .remote-product-grid,
   .pitch-grid {
@@ -949,8 +995,17 @@ footer p {
   .vision-hero-grid article,
   .document-board article,
   .pitch-path article,
+  .roadmap-board article,
   .ecosystem-map div {
     min-height: auto;
+  }
+
+  .pitch-room-page h1 {
+    font-size: 4.6rem;
+  }
+
+  .pitch-room-media img {
+    min-height: 320px;
   }
 }
 
@@ -971,6 +1026,10 @@ footer p {
 
   h1 {
     font-size: 4.25rem;
+  }
+
+  .pitch-room-page h1 {
+    font-size: 3.5rem;
   }
 
   h2 {
