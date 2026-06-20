@@ -411,6 +411,43 @@ p {
   background: #080808;
 }
 
+.finance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: clamp(24px, 4vw, 48px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--line);
+}
+
+.finance-grid article {
+  min-height: 230px;
+  display: grid;
+  align-content: space-between;
+  gap: 18px;
+  padding: clamp(22px, 3vw, 36px);
+  background:
+    linear-gradient(145deg, rgba(93, 42, 57, 0.2), rgba(8, 8, 8, 0.98)),
+    #080808;
+}
+
+.finance-grid span {
+  color: var(--warm);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.finance-grid strong {
+  color: var(--text);
+  font-size: 2.35rem;
+  font-weight: 620;
+  line-height: 1;
+}
+
 .research-steps article {
   min-height: 280px;
 }
@@ -958,6 +995,7 @@ footer p {
   .pitch-path,
   .pitch-room-media,
   .roadmap-board,
+  .finance-grid,
   .motion-grid,
   .remote-product-grid,
   .pitch-grid {
@@ -1014,6 +1052,7 @@ footer p {
   .document-board article,
   .pitch-path article,
   .roadmap-board article,
+  .finance-grid article,
   .ecosystem-map div {
     min-height: auto;
   }
