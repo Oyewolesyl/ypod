@@ -127,23 +127,52 @@ nav a:hover {
 }
 
 .site-float-lite {
-  right: clamp(18px, 6vw, 96px);
-  bottom: 8%;
-  width: clamp(170px, 22vw, 340px);
+  right: clamp(24px, 7vw, 120px);
+  bottom: 5%;
+  width: clamp(145px, 18vw, 285px);
+  animation-delay: -0.7s;
+}
+
+.site-float-yema-one-left {
+  right: clamp(210px, 34vw, 610px);
+  top: 17%;
+  width: clamp(82px, 10vw, 160px);
+  animation-delay: -2.2s;
+}
+
+.site-float-yema-one-right {
+  right: clamp(120px, 22vw, 420px);
+  bottom: 17%;
+  width: clamp(86px, 11vw, 170px);
+  animation-delay: -4s;
 }
 
 .site-float-pro {
-  right: clamp(180px, 29vw, 520px);
-  top: 19%;
-  width: clamp(100px, 13vw, 210px);
+  right: clamp(310px, 43vw, 760px);
+  top: 34%;
+  width: clamp(84px, 10vw, 155px);
   animation-delay: -1.8s;
 }
 
+.site-float-pro-right {
+  right: clamp(18px, 6vw, 95px);
+  top: 28%;
+  width: clamp(80px, 9vw, 150px);
+  animation-delay: -5s;
+}
+
 .site-float-remote {
-  right: clamp(10px, 4vw, 74px);
-  top: 14%;
-  width: clamp(120px, 13vw, 230px);
+  right: clamp(70px, 13vw, 240px);
+  top: 9%;
+  width: clamp(100px, 11vw, 190px);
   animation-delay: -3.1s;
+}
+
+.site-float-wrap {
+  right: clamp(240px, 30vw, 560px);
+  bottom: 4%;
+  width: clamp(92px, 10vw, 175px);
+  animation-delay: -3.8s;
 }
 
 .hero-copy {
@@ -1258,19 +1287,45 @@ footer p {
   }
 
   .site-float-lite {
-    width: 150px;
+    width: 128px;
     right: 12px;
-    bottom: 6%;
+    bottom: 7%;
+  }
+
+  .site-float-yema-one-left {
+    width: 72px;
+    right: 128px;
+    top: 17%;
+  }
+
+  .site-float-yema-one-right {
+    width: 76px;
+    right: 86px;
+    bottom: 20%;
   }
 
   .site-float-pro {
-    width: 86px;
-    right: 154px;
-    top: 18%;
+    width: 70px;
+    right: 174px;
+    top: 30%;
+  }
+
+  .site-float-pro-right {
+    width: 68px;
+    right: 12px;
+    top: 22%;
   }
 
   .site-float-remote {
-    display: none;
+    width: 86px;
+    right: 72px;
+    top: 9%;
+  }
+
+  .site-float-wrap {
+    width: 76px;
+    right: 184px;
+    bottom: 9%;
   }
 
   .pitch-room-media .pitch-float {
