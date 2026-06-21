@@ -16,6 +16,17 @@
     sans-serif;
 }
 
+@keyframes ypodFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translate3d(0, -14px, 0) rotate(4deg);
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -103,6 +114,36 @@ nav a:hover {
   object-fit: cover;
   opacity: 0.72;
   filter: saturate(0.78) contrast(1.06);
+}
+
+.site-float {
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 42px rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+  animation: ypodFloat 6s ease-in-out infinite;
+}
+
+.site-float-lite {
+  right: clamp(18px, 6vw, 96px);
+  bottom: 8%;
+  width: clamp(170px, 22vw, 340px);
+}
+
+.site-float-pro {
+  right: clamp(180px, 29vw, 520px);
+  top: 19%;
+  width: clamp(100px, 13vw, 210px);
+  animation-delay: -1.8s;
+}
+
+.site-float-remote {
+  right: clamp(10px, 4vw, 74px);
+  top: 14%;
+  width: clamp(120px, 13vw, 230px);
+  animation-delay: -3.1s;
 }
 
 .hero-copy {
@@ -376,6 +417,7 @@ p {
 }
 
 .pitch-room-media {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
   gap: 1px;
@@ -392,6 +434,31 @@ p {
   min-height: 420px;
   object-fit: cover;
   background: #050505;
+}
+
+.pitch-room-media .pitch-float {
+  position: absolute;
+  z-index: 2;
+  width: clamp(120px, 17vw, 260px);
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+  background: transparent;
+  filter: drop-shadow(0 28px 38px rgba(0, 0, 0, 0.5));
+  animation: ypodFloat 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.pitch-float-lite {
+  left: 4%;
+  bottom: 3%;
+}
+
+.pitch-float-wrap {
+  right: 7%;
+  top: 7%;
+  width: clamp(100px, 12vw, 180px);
+  animation-delay: -2.2s;
 }
 
 .roadmap-board {
@@ -1188,6 +1255,26 @@ footer p {
 
   .tagline {
     font-size: 2rem;
+  }
+
+  .site-float-lite {
+    width: 150px;
+    right: 12px;
+    bottom: 6%;
+  }
+
+  .site-float-pro {
+    width: 86px;
+    right: 154px;
+    top: 18%;
+  }
+
+  .site-float-remote {
+    display: none;
+  }
+
+  .pitch-room-media .pitch-float {
+    width: 112px;
   }
 
   .tagline {
